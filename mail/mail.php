@@ -29,6 +29,7 @@ $mail->Username = "<your.email.sender>@gmail.com";
 $mail->Password = "<password.email.sender>";
 $mail->setFrom('<your.email.sender>@gmail.com',$name);
 $mail->addAddress('contacto@<your.site>.com', '<site admin>');
+$mail->isHTML(true);
 
 $mail->Subject = 'Mail enviado de <your site>';
 $mail->Body    = "Ha recibido un nuevo mensaje desde el formulario de contacto del Sitio Web.\n\n"."Aquí están los detalles:\n\nNombre: $name\n ----- Email: $email_address\n ----- Teléfono: $phone\n ----- Mensaje: $message";
